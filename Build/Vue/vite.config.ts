@@ -18,5 +18,5 @@ export default defineConfig(async () => ({
       ignored: ["**/src-tauri/**"],
     },
   },
-  publicPath: '/games101_rasterize_by_unity_webgl/'
+  base: "games101_rasterize_by_unity_webgl",
 }));
