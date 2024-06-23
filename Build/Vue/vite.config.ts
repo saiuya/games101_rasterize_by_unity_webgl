@@ -19,5 +19,5 @@ export default defineConfig(async () => ({
     },
   },
   // 在域名后添加前缀路径
-  base: "games101_rasterize_by_unity_webgl",
+  base: "/games101_rasterize_by_unity_webgl",
 }));
