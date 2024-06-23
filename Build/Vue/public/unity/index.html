@@ -35,29 +35,30 @@
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       }).then(res => {
-        unityObj = res
-        window.parent.postMessage({
-          status: "loading",
-          data: null
-        }, "*");
-      });
-  
-      /**
-       * 发送事件给unity
-       * @param objName 游戏物体名字
-       * @param funName 函数名字
-       * @param param 函数参数
-      */ function sendUnityEvent(objName, funName, param) {
-        if (unityObj == null) return
-        unityObj.SendMessage(objName, funName, param)
-      }
-  
-      function getUnityInput(content) {
-        window.parent.postMessage({
-          status: "input",
-          data: content
-        }, "*");
-      }
+      unityObj = res
+      window.parent.postMessage({
+        status: "loading",
+        data: null
+      }, "*");
+    });
+
+    /**
+     * 发送事件给unity
+     * @param objName 游戏物体名字
+     * @param funName 函数名字
+     * @param param 函数参数
+    */
+    function sendUnityEvent(objName, funName, param) {
+      if (unityObj == null) return
+      unityObj.SendMessage(objName, funName, param)
+    }
+
+    function getUnityInput(content) {
+      window.parent.postMessage({
+        status: "input",
+        data: content
+      }, "*");
+    }
     </script>
   </body>
 </html>
