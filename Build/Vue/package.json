@@ -8,7 +8,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
-    "dep": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "dep": "push-dir --dir=dist --branch=gh-pages"
   },
   "dependencies": {
     "@tauri-apps/api": "^1",
