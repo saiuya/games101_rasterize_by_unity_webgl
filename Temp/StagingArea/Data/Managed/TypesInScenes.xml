@@ -1,7 +1,7 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="CameraMovementController" preserve="nothing"/>
-		<type fullname="rasterize" preserve="nothing"/>
+		<type fullname="Rasterize" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
 		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerBitField" preserve="nothing"/>

@@ -19,5 +19,8 @@ export default defineConfig(async () => ({
     },
   },
   // 在域名后添加前缀路径
-  base: "/games101_rasterize_by_unity_webgl",
+  base:
+    process.env.NODE_ENV === "production"
+      ? "/games101_rasterize_by_unity_webgl/"
+      : "/",
 }));

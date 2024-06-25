@@ -1,3 +1,0 @@
-Packages/puerts_unity_demo-upm-2.0.5/package/Runtime/Src/Default/JsEnv.cs(243,30): warning CS0168: The variable 'ex' is declared but never used
-Packages/puerts_unity_demo-upm-2.0.5/package/Runtime/Src/Loader.cs(96,13): warning CS0162: Unreachable code detected
-Packages/puerts_unity_demo-upm-2.0.5/package/Runtime/Src/PathHelper.cs(16,29): warning CS0414: The field 'PathHelper.DOT' is assigned but its value is never used

@@ -139,6 +139,8 @@ IL2CPP_EXTERN_C RuntimeClass* PlayableHandle_t5D6A01EF94382EFEDC047202F71DF88276
 IL2CPP_EXTERN_C RuntimeClass* PlayableOutputHandle_tEB217645A8C0356A3AC6F964F283003B9740E883_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PlayableOutput_t2F7C45A58DA3E788EEDDB439549E21CF3FCF3680_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RenderTargetBlendState_t51229A3F09EE698F8E49731F1BC5BB77DBEDC4C7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RendererListDesc_t5C51B75B4D539F99345A077545015B8FB99FE78E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RendererListParams_t13F72282BCE2DC255747FE7694C6BBC3377944B1_il2cpp_TypeInfo_var;
@@ -1671,6 +1673,10 @@ struct PlayableOutput_t2F7C45A58DA3E788EEDDB439549E21CF3FCF3680_StaticFields
 {
 	PlayableOutput_t2F7C45A58DA3E788EEDDB439549E21CF3FCF3680 ___m_NullPlayableOutput;
 };
+struct RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26_StaticFields
+{
+	RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26 ___defaultValue;
+};
 struct SupportedRenderingFeatures_t569A94D488395E4967F2CA349DB518EA7BD117A6_StaticFields
 {
 	SupportedRenderingFeatures_t569A94D488395E4967F2CA349DB518EA7BD117A6* ___s_Active;
@@ -1980,6 +1986,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_m6F4836A77462991E907648
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_tDF6A1978B5813BF4DAD7948E398009FFC9BEA38D NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisLightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21_mC82DECEB698D4AABF41EE9DF0E1FC00C8803BD3A_gshared (void* ___0_dataPointer, int32_t ___1_length, int32_t ___2_allocator, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Assert_AreEqual_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m1C7D690BD2B4127279886CDD4F1201F22D1BB81E_gshared (int32_t ___0_expected, int32_t ___1_actual, String_t* ___2_message, const RuntimeMethod* method) ;
 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BlendState_Equals_m3F7EFA35979F29164E0FE66930C7FE3E870E3748 (BlendState_tC9B817349E49EF26CBCDC8FCE02789A661DC2630* __this, BlendState_tC9B817349E49EF26CBCDC8FCE02789A661DC2630 ___0_other, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RasterState_Equals_m61270B22D9C4EF86DB8CADE3D217D9D3E849F410 (RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26* __this, RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26 ___0_other, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DepthState_Equals_mF4448D46992C7BB7BDBCBDC69CFA5394EE315C41 (DepthState_t798415D2C1D9202E555FEE5D4C5FDF6B3A077255* __this, DepthState_t798415D2C1D9202E555FEE5D4C5FDF6B3A077255 ___0_other, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StencilState_Equals_m9FFB8A41D8838FD128875CB2D4DAA760C6DF1051 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 ___0_other, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RenderStateBlock_Equals_m8D194B252A39D7E4BB15EDC9B1E1DE0B32445B14 (RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733* __this, RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733 ___0_other, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RenderStateBlock_Equals_mF2FD2D7C1C6EA07116947C3BC730E741A4054EE9 (RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BlendState_GetHashCode_mA0E61E556B7B64ED28D6C50D54665CE2914EE5B0 (BlendState_tC9B817349E49EF26CBCDC8FCE02789A661DC2630* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RasterState_GetHashCode_m2F2090DFF4366B0789D6803ABE64D00C29D704B1 (RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DepthState_GetHashCode_m61A6034A3DC8EFCAD253A4A48C295473CB5C50B4 (DepthState_t798415D2C1D9202E555FEE5D4C5FDF6B3A077255* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_GetHashCode_mB4A02DEE780377C853D16FFF49CCB9D9F4F711A5 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RenderStateBlock_GetHashCode_m9CAE3D7AD3EF037725CB0CB809C1A3783790EB3D (RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RenderTargetBlendState_Equals_m8353DA559FC116A14C55F260415C9680E1F24C11 (RenderTargetBlendState_t51229A3F09EE698F8E49731F1BC5BB77DBEDC4C7* __this, RenderTargetBlendState_t51229A3F09EE698F8E49731F1BC5BB77DBEDC4C7 ___0_other, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RenderTargetBlendState_Equals_mE7C353E5B3CCF2B9D1E9A43C2977589C96DCE029 (RenderTargetBlendState_t51229A3F09EE698F8E49731F1BC5BB77DBEDC4C7* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678 (uint8_t* __this, const RuntimeMethod* method) ;
@@ -2054,9 +2071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_compareFunctionBack_m8A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_passOperationBack_m4B1395FE21F5B5C809DC6F31D5824A90E05ED220 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_failOperationBack_mD279271DD1F99EE5B8BC19F5AE60988E6C6F0E4A (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_zFailOperationBack_mC092ABD8A5EA87245640A10E54C6A1990C4F6864 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StencilState_Equals_m9FFB8A41D8838FD128875CB2D4DAA760C6DF1051 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 ___0_other, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StencilState_Equals_mEA45A5D2BF2223B15EE0FB8BCEDBA9CB534ADF4B (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_GetHashCode_mB4A02DEE780377C853D16FFF49CCB9D9F4F711A5 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SupportedRenderingFeatures__ctor_mF7728980F81142B7BD45FBB25AB001B17A4BF0ED (SupportedRenderingFeatures_t569A94D488395E4967F2CA349DB518EA7BD117A6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* IntPtr_op_Explicit_m2728CBA081E79B97DDCF1D4FAD77B309CA1E94BF (intptr_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SupportedRenderingFeatures_t569A94D488395E4967F2CA349DB518EA7BD117A6* SupportedRenderingFeatures_get_active_m09012C98E24D5B2E8C09F6657FC5CD19B2AF3054 (const RuntimeMethod* method) ;
@@ -2304,6 +2319,236 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_GammaToLinearSpace_mEF9E26BAD322E55448B286ABDCDF4A2CC236547F (float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* __this, float ___0_x, float ___1_y, float ___2_z, float ___3_w, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RenderStateBlock_Equals_m8D194B252A39D7E4BB15EDC9B1E1DE0B32445B14 (RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733* __this, RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733 ___0_other, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t G_B7_0 = 0;
+	{
+		BlendState_tC9B817349E49EF26CBCDC8FCE02789A661DC2630* L_0 = (BlendState_tC9B817349E49EF26CBCDC8FCE02789A661DC2630*)(&__this->___m_BlendState);
+		RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733 L_1 = ___0_other;
+		BlendState_tC9B817349E49EF26CBCDC8FCE02789A661DC2630 L_2 = L_1.___m_BlendState;
+		bool L_3;
+		L_3 = BlendState_Equals_m3F7EFA35979F29164E0FE66930C7FE3E870E3748(L_0, L_2, NULL);
+		if (!L_3)
+		{
+			goto IL_006b;
+		}
+	}
+	{
+		RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26* L_4 = (RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26*)(&__this->___m_RasterState);
+		RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733 L_5 = ___0_other;
+		RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26 L_6 = L_5.___m_RasterState;
+		il2cpp_codegen_runtime_class_init_inline(RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26_il2cpp_TypeInfo_var);
+		bool L_7;
+		L_7 = RasterState_Equals_m61270B22D9C4EF86DB8CADE3D217D9D3E849F410(L_4, L_6, NULL);
+		if (!L_7)
+		{
+			goto IL_006b;
+		}
+	}
+	{
+		DepthState_t798415D2C1D9202E555FEE5D4C5FDF6B3A077255* L_8 = (DepthState_t798415D2C1D9202E555FEE5D4C5FDF6B3A077255*)(&__this->___m_DepthState);
+		RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733 L_9 = ___0_other;
+		DepthState_t798415D2C1D9202E555FEE5D4C5FDF6B3A077255 L_10 = L_9.___m_DepthState;
+		bool L_11;
+		L_11 = DepthState_Equals_mF4448D46992C7BB7BDBCBDC69CFA5394EE315C41(L_8, L_10, NULL);
+		if (!L_11)
+		{
+			goto IL_006b;
+		}
+	}
+	{
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* L_12 = (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*)(&__this->___m_StencilState);
+		RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733 L_13 = ___0_other;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_14 = L_13.___m_StencilState;
+		bool L_15;
+		L_15 = StencilState_Equals_m9FFB8A41D8838FD128875CB2D4DAA760C6DF1051(L_12, L_14, NULL);
+		if (!L_15)
+		{
+			goto IL_006b;
+		}
+	}
+	{
+		int32_t L_16 = __this->___m_StencilReference;
+		RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733 L_17 = ___0_other;
+		int32_t L_18 = L_17.___m_StencilReference;
+		if ((!(((uint32_t)L_16) == ((uint32_t)L_18))))
+		{
+			goto IL_006b;
+		}
+	}
+	{
+		int32_t L_19 = __this->___m_Mask;
+		RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733 L_20 = ___0_other;
+		int32_t L_21 = L_20.___m_Mask;
+		G_B7_0 = ((((int32_t)L_19) == ((int32_t)L_21))? 1 : 0);
+		goto IL_006c;
+	}
+
+IL_006b:
+	{
+		G_B7_0 = 0;
+	}
+
+IL_006c:
+	{
+		V_0 = (bool)G_B7_0;
+		goto IL_006f;
+	}
+
+IL_006f:
+	{
+		bool L_22 = V_0;
+		return L_22;
+	}
+}
+IL2CPP_EXTERN_C  bool RenderStateBlock_Equals_m8D194B252A39D7E4BB15EDC9B1E1DE0B32445B14_AdjustorThunk (RuntimeObject* __this, RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733 ___0_other, const RuntimeMethod* method)
+{
+	RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = RenderStateBlock_Equals_m8D194B252A39D7E4BB15EDC9B1E1DE0B32445B14(_thisAdjusted, ___0_other, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RenderStateBlock_Equals_mF2FD2D7C1C6EA07116947C3BC730E741A4054EE9 (RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t G_B5_0 = 0;
+	{
+		RuntimeObject* L_0 = ___0_obj;
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		V_1 = (bool)0;
+		goto IL_0027;
+	}
+
+IL_000d:
+	{
+		RuntimeObject* L_2 = ___0_obj;
+		if (!((RuntimeObject*)IsInstSealed((RuntimeObject*)L_2, RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		RuntimeObject* L_3 = ___0_obj;
+		bool L_4;
+		L_4 = RenderStateBlock_Equals_m8D194B252A39D7E4BB15EDC9B1E1DE0B32445B14(__this, ((*(RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733*)((RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733*)(RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733*)UnBox(L_3, RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733_il2cpp_TypeInfo_var)))), NULL);
+		G_B5_0 = ((int32_t)(L_4));
+		goto IL_0024;
+	}
+
+IL_0023:
+	{
+		G_B5_0 = 0;
+	}
+
+IL_0024:
+	{
+		V_1 = (bool)G_B5_0;
+		goto IL_0027;
+	}
+
+IL_0027:
+	{
+		bool L_5 = V_1;
+		return L_5;
+	}
+}
+IL2CPP_EXTERN_C  bool RenderStateBlock_Equals_mF2FD2D7C1C6EA07116947C3BC730E741A4054EE9_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method)
+{
+	RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = RenderStateBlock_Equals_mF2FD2D7C1C6EA07116947C3BC730E741A4054EE9(_thisAdjusted, ___0_obj, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RenderStateBlock_GetHashCode_m9CAE3D7AD3EF037725CB0CB809C1A3783790EB3D (RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		BlendState_tC9B817349E49EF26CBCDC8FCE02789A661DC2630* L_0 = (BlendState_tC9B817349E49EF26CBCDC8FCE02789A661DC2630*)(&__this->___m_BlendState);
+		int32_t L_1;
+		L_1 = BlendState_GetHashCode_mA0E61E556B7B64ED28D6C50D54665CE2914EE5B0(L_0, NULL);
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26* L_3 = (RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26*)(&__this->___m_RasterState);
+		il2cpp_codegen_runtime_class_init_inline(RasterState_tA30E8336EA5D1E2152A6C7252F15384985B98A26_il2cpp_TypeInfo_var);
+		int32_t L_4;
+		L_4 = RasterState_GetHashCode_m2F2090DFF4366B0789D6803ABE64D00C29D704B1(L_3, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_2, ((int32_t)397)))^L_4));
+		int32_t L_5 = V_0;
+		DepthState_t798415D2C1D9202E555FEE5D4C5FDF6B3A077255* L_6 = (DepthState_t798415D2C1D9202E555FEE5D4C5FDF6B3A077255*)(&__this->___m_DepthState);
+		int32_t L_7;
+		L_7 = DepthState_GetHashCode_m61A6034A3DC8EFCAD253A4A48C295473CB5C50B4(L_6, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_5, ((int32_t)397)))^L_7));
+		int32_t L_8 = V_0;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* L_9 = (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*)(&__this->___m_StencilState);
+		int32_t L_10;
+		L_10 = StencilState_GetHashCode_mB4A02DEE780377C853D16FFF49CCB9D9F4F711A5(L_9, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_8, ((int32_t)397)))^L_10));
+		int32_t L_11 = V_0;
+		int32_t L_12 = __this->___m_StencilReference;
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_11, ((int32_t)397)))^L_12));
+		int32_t L_13 = V_0;
+		int32_t L_14 = __this->___m_Mask;
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_13, ((int32_t)397)))^(int32_t)L_14));
+		int32_t L_15 = V_0;
+		V_1 = L_15;
+		goto IL_0084;
+	}
+
+IL_0084:
+	{
+		int32_t L_16 = V_1;
+		return L_16;
+	}
+}
+IL2CPP_EXTERN_C  int32_t RenderStateBlock_GetHashCode_m9CAE3D7AD3EF037725CB0CB809C1A3783790EB3D_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<RenderStateBlock_tFC570EF2C8F3A817FECD578E385D18CEEEA06733*>(__this + _offset);
+	int32_t _returnValue;
+	_returnValue = RenderStateBlock_GetHashCode_m9CAE3D7AD3EF037725CB0CB809C1A3783790EB3D(_thisAdjusted, method);
+	return _returnValue;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"

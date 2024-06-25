@@ -122,6 +122,7 @@ struct DataSet_1_t7AB6378C4975B89560B35C7854DF838C507AD25A;
 struct Dictionary_2_t7096FDAEA6CE93401BE4CE39471636261DB28BF5;
 struct Dictionary_2_t4CE53C8BCD6558009650AFE413B37A773593BC7B;
 struct Dictionary_2_t6B96E80EAD7CEEF3A76E858CE4388471D016AE55;
+struct Dictionary_2_t256D834E777628043876023A6881E1448AFE7A4B;
 struct Dictionary_2_t2DC4EC4990630703C4F7D8E4851A2CD0A1192C12;
 struct Dictionary_2_tE738E3156DB830A7FCEA2AE6066FC5BEA6715F0D;
 struct Dictionary_2_t8816EE65052990C95E94D345A5B702B1BE13D96D;
@@ -642,6 +643,7 @@ struct Lazy_1_tE5CE6A23831F40EE06D37F821AD0F903CC7A02C2;
 struct Lazy_1_t07F21D0B542171B9535B96E3CE293999A8522162;
 struct Lazy_1_t433B959747816263AF938922BE490D4E32DE2080;
 struct Lazy_1_t8BF68D560BD85EC85ECBE57F1B105CF767F8FBBC;
+struct LinkedList_1_t663B91895D7C0666693683BA6D8034329C97E04D;
 struct LinkedList_1_t09F6FB09C766455615BBF59716D285304C49E0E7;
 struct LinkedPool_1_tD8A175EE023C8220138E51E722F4A20ACE9CA851;
 struct LinkedPool_1_t2089E962DBA7DCED47F5B21A93012A52E885E94F;
@@ -2101,6 +2103,9 @@ struct U3CModuleU3E_tA3942657997767549ED3B944EB77AFA183BBF4B9
 struct U3CModuleU3E_tC9AE405E6210B66BC687F16DD644AB836AFC0299 
 {
 };
+struct U3CModuleU3E_t73FFAC4DB1D9355A56BBA6FBE2580B62E7B48921 
+{
+};
 struct U3CModuleU3E_t45949674E38A01F43FB335E54D3156ACBCB5AD86 
 {
 };
@@ -2108,9 +2113,6 @@ struct U3CModuleU3E_t25BDA6BA0BD9484EE32F84BDE8EC337F960C90F2
 {
 };
 struct U3CModuleU3E_t7C5D71B9800D53F6CCBEDD89DAAAA2BA48835865 
-{
-};
-struct U3CModuleU3E_t1D7AA38A86FFEADF498A4B3B18BC68749CE5B339 
 {
 };
 struct U3CModuleU3E_t2915620281D112A443FB14861757F697852D8729 
@@ -2509,14 +2511,6 @@ struct AnalyticsIdentifier_tE867F385ABAC820C67EC52E1F523F2060527DC2A  : public R
 	String_t* ___Identifier;
 	String_t* ___Namespace;
 	int32_t ___Hashcode;
-};
-struct AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074  : public RuntimeObject
-{
-	String_t* ___m_NormalTrigger;
-	String_t* ___m_HighlightedTrigger;
-	String_t* ___m_PressedTrigger;
-	String_t* ___m_SelectedTrigger;
-	String_t* ___m_DisabledTrigger;
 };
 struct AppContextSwitches_t542F10E9BE2333B7BE24C8858C8A24EFA6C06D38  : public RuntimeObject
 {
@@ -3923,6 +3917,11 @@ struct ExtensionMethodCache_t4D2C260009066EB013B1465893D081AD0FA3F89A  : public 
 };
 struct FSRUtils_t869EFB9A868CB70316D357B54D164941BAFDA5A4  : public RuntimeObject
 {
+};
+struct FastAction_t32D4ADE06921D3EAB9BCE9B6397C82A4A898644D  : public RuntimeObject
+{
+	LinkedList_1_t663B91895D7C0666693683BA6D8034329C97E04D* ___delegates;
+	Dictionary_2_t256D834E777628043876023A6881E1448AFE7A4B* ___lookup;
 };
 struct FastResourceComparer_t8262C85C28461C5CD92F380FD86C233DC1654FEC  : public RuntimeObject
 {
@@ -6146,9 +6145,6 @@ struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tCF25359F9316E8C64848B985E
 {
 };
 struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tE8FD0EFB9B179A08860EE53A836B72F677A0E855  : public RuntimeObject
-{
-};
-struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tDF32BA2AA355479EB2F529FFA37873A49376C427  : public RuntimeObject
 {
 };
 struct UnityThread_tF9B353D2BD29AE999AC8B11E5FF55A3EDD6F783E  : public RuntimeObject
@@ -17051,30 +17047,6 @@ struct MonoScriptData_t10873803FCDA33EEF7653AAE47EA47B85005CF41_marshaled_pinvok
 	int32_t ___IsEditorOnly;
 };
 struct MonoScriptData_t10873803FCDA33EEF7653AAE47EA47B85005CF41_marshaled_com
-{
-	Il2CppSafeArray* ___FilePathsData;
-	Il2CppSafeArray* ___TypesData;
-	int32_t ___TotalTypes;
-	int32_t ___TotalFiles;
-	int32_t ___IsEditorOnly;
-};
-struct MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E 
-{
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___FilePathsData;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___TypesData;
-	int32_t ___TotalTypes;
-	int32_t ___TotalFiles;
-	bool ___IsEditorOnly;
-};
-struct MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E_marshaled_pinvoke
-{
-	Il2CppSafeArray* ___FilePathsData;
-	Il2CppSafeArray* ___TypesData;
-	int32_t ___TotalTypes;
-	int32_t ___TotalFiles;
-	int32_t ___IsEditorOnly;
-};
-struct MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E_marshaled_com
 {
 	Il2CppSafeArray* ___FilePathsData;
 	Il2CppSafeArray* ___TypesData;
@@ -54438,13 +54410,13 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize5394 = { 0, 0, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5395;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5395 = { 0, 0, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5396;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5396 = { sizeof(U3CModuleU3E_t1D7AA38A86FFEADF498A4B3B18BC68749CE5B339), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5396 = { sizeof(U3CModuleU3E_t73FFAC4DB1D9355A56BBA6FBE2580B62E7B48921), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5397;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5397 = { sizeof(MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E)+ sizeof(RuntimeObject), sizeof(MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E_marshaled_pinvoke), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5397 = { sizeof(FastAction_t32D4ADE06921D3EAB9BCE9B6397C82A4A898644D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5398;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5398 = { sizeof(UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tDF32BA2AA355479EB2F529FFA37873A49376C427), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5398 = { 0, 0, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5399;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5399 = { sizeof(AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5399 = { 0, 0, 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
